@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "nmemoire_mobile",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

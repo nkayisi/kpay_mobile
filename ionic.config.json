@@ -1,0 +1,7 @@
+{
+  "name": "nmemoire_mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
