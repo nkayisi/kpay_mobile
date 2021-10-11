@@ -24,3 +24,32 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+
+.top-site {
+    height: 150px;
+    width: 100%;
+    border-radius: 0 0 840px 0;
+    position: absolute;
+    top: 0;
+    background-color: #1ce;
+    opacity: .5;
+}
+
+
+.bottom-side {
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 1000px 0 0;
+    background-color: #1ce;
+    opacity: .5;
+}
+
+.title {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+

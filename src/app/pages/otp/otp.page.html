@@ -1,0 +1,31 @@
+
+<ion-content>
+
+  <div class="top-site"></div>
+  <div class="bottom-side"></div>
+
+  <div class="title">
+      <h3>Code de verification</h3>
+    </div>
+
+  <main>
+
+    <ion-item>
+      <ion-label position="floating">Code</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+
+    <div>
+      <small>
+        Un code vient d'être envoyé par SMS sur...!
+        <a href="#">envoyer</a>
+      </small>
+    </div>
+
+    <ion-button (click)="verifyOtp()" shape="round" color="medium">
+      Verifier
+    </ion-button>
+
+  </main>
+
+</ion-content>

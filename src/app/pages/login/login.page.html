@@ -1,0 +1,32 @@
+<ion-content>
+
+  <div class="top-site"></div>
+  <div class="bottom-side"></div>
+
+    <div class="title">
+      <h3>Connexion</h3>
+    </div>
+
+  <main>
+
+    <ion-item>
+        <ion-label position="floating">Téléphone</ion-label>
+        <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating">Mot de passe</ion-label>
+        <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="login()" expand="block" fill="outline" shape="round" color="danger">
+      Connexion
+    </ion-button>
+
+    <ion-button (click)="register()" expand="block" shape="round" color="dark">
+      Créer un compte
+    </ion-button>
+  
+  </main>
+
+</ion-content>

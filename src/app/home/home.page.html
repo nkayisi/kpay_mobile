@@ -1,20 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-tabs>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-tab-bar slot="bottom" color="tertiary">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+    <ion-tab-button tab="transfer">
+      <ion-icon name="cash"></ion-icon>
+      <ion-label>Transfer</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="bill">
+      <ion-icon name="receipt"></ion-icon>
+      <ion-label>Facture</ion-label>
+      <ion-badge color="primary">6</ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button tab="activity">
+      <ion-icon name="options"></ion-icon>
+      <ion-label>Activité</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="wallet">
+      <ion-icon name="wallet"></ion-icon>
+      <ion-label>Wallet</ion-label>
+    </ion-tab-button>
+
+    <!-- <ion-tab-button tab="wallet">
+      <ion-icon name="cog"></ion-icon>
+      <ion-label>Compte</ion-label>
+    </ion-tab-button> -->
+
+  </ion-tab-bar>
+
+</ion-tabs>
