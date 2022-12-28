@@ -1,7 +1,10 @@
 {
   "name": "nmemoire_mobile",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
   },
   "type": "angular"
 }

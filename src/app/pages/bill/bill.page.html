@@ -10,12 +10,13 @@
 
     <ion-list>
 
-      <ion-item detail>
+      <ion-item *ngFor="let bill of bills"  detail>
         <ion-label>
-          <h4>Energie du Nord-Kivu</h4>
-          <small>Facture d'électricité pour le mois</small>
+          <h4>{{bill.shop_assistant.name}}</h4>
+          <small>{{bill.bill_motif}}</small>
         </ion-label>
-        <ion-note slot="end" mode="md" color="danger">Non payé</ion-note>
+        <ion-note *ngIf="!bill.is_payed"  slot="end" mode="md" color="danger">Non payé</ion-note>
+        <ion-note *ngIf="bill.is_payed" slot="end" mode="md" color="success">Déjà payé</ion-note>
       </ion-item>
 
       <ion-item detail>
@@ -23,7 +24,7 @@
           <h4>Maria</h4>
           <small>Pokémon Yellow</small>
         </ion-label>
-        <ion-note slot="end" mode="md" color="success">Déjà payé</ion-note>
+        <ion-note slot="end" mode="md" color="danger">Non payé</ion-note>
       </ion-item>
 
     </ion-list>

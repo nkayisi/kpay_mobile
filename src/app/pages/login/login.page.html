@@ -11,12 +11,12 @@
 
     <ion-item>
         <ion-label position="floating">Téléphone</ion-label>
-        <ion-input></ion-input>
+        <ion-input [(ngModel)]="phone" required></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label position="floating">Mot de passe</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input [(ngModel)]="password" type="password" required></ion-input>
     </ion-item>
 
     <ion-button (click)="login()" expand="block" fill="outline" shape="round" color="danger">
