@@ -14,17 +14,17 @@
 
         <ion-item>
             <ion-label position="floating">Nom</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input [(ngModel)]="name" type="text" required></ion-input>
         </ion-item>
 
         <ion-item>
             <ion-label position="floating">Téléphone</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input [(ngModel)]="phone" type="text" required></ion-input>
         </ion-item>
 
         <ion-item>
             <ion-label position="floating">Mot de passe</ion-label>
-            <ion-input type="password"></ion-input>
+            <ion-input [(ngModel)]="password" type="password" required></ion-input>
         </ion-item>
 
         <ion-button (click)="registration()" expand="block"  shape="round"color="dark">

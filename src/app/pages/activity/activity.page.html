@@ -10,12 +10,12 @@
 
     <ion-list>
 
-      <ion-item detail>
+      <ion-item *ngFor="let trans of transactions" detail>
         <ion-label>
-          <h4>Recharge</h4>
-          <small>Pokémon Yellow</small>
+          <h4>{{trans.desc_type}}</h4>
+          <small>{{trans.trans_date}}</small>
         </ion-label>
-        <ion-note slot="end" mode="md">Default Note</ion-note>
+        <ion-note slot="end" mode="md">{{trans.currency}} {{trans.trans_amount}}</ion-note>
       </ion-item>
 
     </ion-list>

@@ -12,12 +12,12 @@
 
     <ion-item>
       <ion-label position="floating">Code</ion-label>
-      <ion-input type="number"></ion-input>
+      <ion-input type="number" [(ngModel)]="otp" required></ion-input>
     </ion-item>
 
     <div>
       <small>
-        Un code vient d'être envoyé par SMS sur...!
+        Un code vient d'être envoyé par SMS sur le {{user.phone}}!
         <a href="#">envoyer</a>
       </small>
     </div>
